@@ -1,0 +1,12 @@
+div.cat {
+
+  h1 {
+    color: lighten($secondary-color, 80%);  
+  }
+  
+  .cat__name {
+      text-transform: uppercase;
+  }
+
+
+}

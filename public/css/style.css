@@ -1,0 +1,8 @@
+div.cat h1 {
+  color: #cccccc; }
+
+div.cat .cat__name {
+  text-transform: uppercase; }
+
+body {
+  background-color: purple; }
