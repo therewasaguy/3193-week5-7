@@ -1,0 +1,26 @@
+<form action="/pets/add" method="post" enctype="multipart/form-data">
+
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="name">
+
+  <label for="price">Price ($): </label>
+  <input type="number" name="price" min="0" max="1000000" id="price">
+
+  <label for="animal">Species: </label>
+  <select name="animal" id="animal">
+    <option value="cat">Cat</option>
+    <option value="dog">Dog</option>
+    <option value="fish">Fish</option>
+    <option value="bird">Bird</option>
+    <option value="hamster">Hamster</option>
+    <option value="reptile">Reptile</option>
+  </select>
+  
+  <label for="tags">Tags (comma separated): </label>
+  <input type="text" name="tags" id="tags">
+
+  <label for="image">Image: </label>
+  <input id="image" type="file" name="image" accepts="image/*">
+  
+  <input type="submit">
+</form>

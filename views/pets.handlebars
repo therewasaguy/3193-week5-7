@@ -1,0 +1,13 @@
+<a href="pets/add">Add new pet</a>
+{{#each pets}}
+
+  <div class="pet">
+    <h1><a href="pets/{{slug}}">{{name}}</a></h1>
+    <h2>{{animal}}</h2>
+    <p>${{price}}.00</p>
+    {{#if imageFilename}}
+      <img src="/uploads/{{imageFilename}}">
+    {{/if}}
+</div>
+
+{{/each}}
