@@ -1,8 +1,7 @@
-div.cat h1 {
-  color: #cccccc; }
-
-div.cat .cat__name {
-  text-transform: uppercase; }
-
-body {
-  background-color: purple; }
+div.pet {
+  border: 2px solid black;
+  margin: 20px; }
+  div.pet h1 {
+    color: #cccccc; }
+  div.pet .cat__name {
+    text-transform: uppercase; }

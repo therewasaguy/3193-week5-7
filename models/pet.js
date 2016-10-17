@@ -1,16 +1,19 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var URLSlugs = require('mongoose-url-slugs');
 
 var petSchema = new Schema({
   name: {type: String, required: true},
-  slug: {type: String, required: true, unique: true},
-  animal: String,
+  animal: Schema.Types.ObjectId,
   breed: String,
   tags: [String],
   price: Number,
   dateCreated: {type: Date, default: Date.now},
-  imageUrl: String
+  imageFilename: String,
+  comments: [Schema.Types.ObjectId]
 });
+
+petSchema.plugin(URLSlugs('name', {field: 'slug'}));
 
 var Pet = mongoose.model('Pet', petSchema);
 

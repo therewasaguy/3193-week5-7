@@ -25,6 +25,9 @@ app.use(bodyParser.json());
 var api = require('./routes/api');
 app.use('/api', api);
 
+var pet = require('./routes/pets');
+app.use('/pets', pet);
+
 app.use( express.static('public') );
 
 // start server
