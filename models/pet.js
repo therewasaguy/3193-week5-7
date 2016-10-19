@@ -4,7 +4,7 @@ var URLSlugs = require('mongoose-url-slugs');
 
 var petSchema = new Schema({
   name: {type: String, required: true},
-  animal: Schema.Types.ObjectId,
+  animal: String,
   breed: String,
   tags: [String],
   price: Number,
